@@ -37,10 +37,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="bg-gray-100 py-3 sticky top-0 z-10">
+    <header className="bg-gray-100 dark:bg-gray-800 py-3 sticky top-0 z-10">
       <div className="container mx-auto px-4">
         <nav className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h1 className=" text-lg md:text-2xl font-bold text-gray-900 dark:text-white">
             Abu Shaleh Ahamad Shopnil
           </h1>
           <div className="md:hidden">
@@ -69,7 +69,8 @@ const Navbar = () => {
           <ul
             className={`md:flex ${
               isMenuOpen ? "flex" : "hidden"
-            } flex-col md:flex-row absolute md:relative top-full left-0 right-0 md:top-auto bg-gray-100 md:bg-transparent`}
+            } flex-col md:flex-row absolute md:relative top-full left-0 right-0 md:top-auto
+             bg-gray-100 md:bg-transparent`}
           >
             {menuItems.map((item) => (
               <li key={item.name} className="md:ml-6 mt-2 md:mt-0">
