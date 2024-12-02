@@ -70,7 +70,7 @@ const Navbar = () => {
             className={`md:flex ${
               isMenuOpen ? "flex" : "hidden"
             } flex-col md:flex-row absolute md:relative top-full left-0 right-0 md:top-auto
-             bg-gray-100 md:bg-transparent`}
+             bg-gray-100 dark:bg-gray-800 md:bg-transparent`}
           >
             {menuItems.map((item) => (
               <li key={item.name} className="md:ml-6 mt-2 md:mt-0">
