@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section className="bg-gray-100 dark:bg-gray-800 py-10">
+    <section className=" dark:bg-gray-800 py-10">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4 ">
           Contact Me

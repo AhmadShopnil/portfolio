@@ -1,8 +1,9 @@
-import About from "@/components/About";
+import AboutMe from "@/components/AboutMe";
+
 import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import TopHero from "@/components/TopHero";
 // import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Home() {
@@ -17,23 +18,27 @@ export default function Home() {
       </main> */}
 
       <main>
-        <Hero />
+        <TopHero />
         <section id="about">
-          <About />
+          <AboutMe />
+        </section>
+
+        <section id="projects">
+          <Projects />
         </section>
         <section id="skills">
           <Skills />
         </section>
-        <section id="projects">
-          <Projects />
-        </section>
+
         <section id="contact">
           <Contact />
         </section>
       </main>
 
-      <footer className="container mx-auto px-4 py-6 text-center text-gray-600 dark:text-gray-400">
-        © 2023 Abu Shaleh Ahamad Shopnil. All rights reserved.
+      <footer className="bg-gray-100  dark:bg-gray-900  text-center text-gray-600 dark:text-gray-400">
+        <div className="container mx-auto px-4 py-6 ">
+          <span> © 2023 Abu Shaleh Ahamad Shopnil. All rights reserved.</span>
+        </div>
       </footer>
     </div>
   );

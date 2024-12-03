@@ -52,7 +52,7 @@ export const projects: TProject[] = [
     category: "FullStack",
     image: "/images/projects/onebitpay-1.PNG",
     live: "https://onebitpay.netlify.app/",
-    githubLink: "",
+    githubLink: "https://github.com/AhmadShopnil/OneBitPay-Server",
     description: "A payment gateway for easy transactions.",
     technologies: ["React", "Tailwind CSS", "Firebase"],
     features: [
@@ -105,7 +105,7 @@ export const projects: TProject[] = [
     category: "FrontEnd",
     image: "/images/projects/agency-1.PNG",
     live: "https://agency-template-1.netlify.app/",
-    githubLink: "",
+    githubLink: "https://github.com/AhmadShopnil/agencyTemplete",
     description: "A clean, responsive template for agencies.",
     technologies: ["HTML", "CSS", "JavaScript"],
     features: ["Modern design", "Responsive layout", "Smooth animations"],
