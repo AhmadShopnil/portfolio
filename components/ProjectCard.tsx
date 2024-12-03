@@ -1,13 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Github, ExternalLink } from "lucide-react";
-import { TProject } from "./Projects";
+import { TProject } from "@/interface";
+import { generateSlug } from "@/utils/generateSlug";
 
 export default function ProjectCard({ project }: { project: TProject }) {
   const { title, category, image, live, githubLink } = project;
+  const slug = generateSlug(title);
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+    <Link
+      href={`/project-details/${slug}`}
+      className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden
+     transition-all duration-300 hover:shadow-lg"
+    >
       <div className="relative aspect-video">
         <Image
           src={image}
@@ -46,6 +52,6 @@ export default function ProjectCard({ project }: { project: TProject }) {
           </Link>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

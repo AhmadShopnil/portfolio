@@ -1,59 +1,7 @@
 import ProjectCard from "./ProjectCard";
-
-export type TProject = {
-  title: string;
-  category: string;
-  image: string;
-  live: string;
-  githubLink: string;
-};
+import { projects } from "@/dataBase/projects";
 
 export default function Projects() {
-  const projects: TProject[] = [
-    {
-      title: "Share Space",
-      category: "FullStack",
-      image: "/images/projects/share-space-1.PNG",
-      live: "https://share-space-tangail.vercel.app/",
-      githubLink: "https://github.com/AhmadShopnil/ShareSpace-client__Prod",
-    },
-    {
-      title: "Bike Rental ",
-      category: "FullStack",
-      image: "/images/projects/bike-rent-1.PNG",
-      live: "https://bike-rent-reactjs.netlify.app/",
-      githubLink: "https://github.com/AhmadShopnil/bikeRent-frontEnd-reactJs",
-    },
-    {
-      title: "OneBitPay",
-      category: "FullStack",
-      image: "/images/projects/onebitpay-1.PNG",
-      live: "https://onebitpay.netlify.app/",
-      githubLink: "",
-    },
-    {
-      title: "E-Bazar",
-      category: "FrontEnd",
-      image: "/images/projects/e-bazar-1.PNG",
-      live: "https://e-bazar2.netlify.app/",
-      githubLink: "https://github.com/AhmadShopnil/e-bazar",
-    },
-    {
-      title: "E-Learning",
-      category: "FullStack",
-      image: "/images/projects/e-learning-1.PNG",
-      live: "https://e-learning2.netlify.app/",
-      githubLink: "https://github.com/AhmadShopnil/e-learning",
-    },
-    {
-      title: "Agency",
-      category: "FrontEnd",
-      image: "/images/projects/agency-1.PNG",
-      live: "https://agency-template-1.netlify.app/",
-      githubLink: "",
-    },
-  ];
-
   return (
     <section className="py-10">
       <div className="container mx-auto px-4">
